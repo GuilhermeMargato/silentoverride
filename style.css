@@ -33,6 +33,88 @@ body {
   color: #fff;
 }
 
+/* Depoimentos */
+.depoimentos {
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  background: rgba(10,10,10,0.85);
+  border-radius: 12px;
+  padding: 28px 20px;
+  text-align: center;
+  color: #00ffc8;
+  box-shadow: 0 2px 8px rgba(0,255,200,0.08);
+}
+
+.depoimentos h2 {
+  color: #00ffc8;
+  margin-bottom: 18px;
+  font-size: 2rem;
+}
+
+.depoimentos blockquote {
+  font-size: 1.2em;
+  color: #ccc;
+  border-left: 4px solid #00ffc8;
+  margin: 0 auto 10px auto;
+  padding: 12px 18px;
+  background: rgba(0,0,0,0.15);
+  border-radius: 8px;
+  font-style: italic;
+}
+
+.depoimentos span {
+  display: block;
+  margin-top: 8px;
+  color: #00ffc8;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* FAQ */
+.faq {
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  background: rgba(10,10,10,0.85);
+  border-radius: 12px;
+  padding: 28px 20px;
+  color: #00ffc8;
+  box-shadow: 0 2px 8px rgba(0,255,200,0.08);
+}
+
+.faq h2 {
+  color: #00ffc8;
+  margin-bottom: 18px;
+  font-size: 2rem;
+}
+
+.faq details {
+  margin-bottom: 18px;
+  background: rgba(0,0,0,0.12);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #ccc;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.faq details[open] {
+  background: rgba(0,255,200,0.06);
+}
+
+.faq summary {
+  font-weight: bold;
+  color: #00ffc8;
+  font-size: 1.1em;
+  outline: none;
+  cursor: pointer;
+}
+
+.faq p {
+  margin-top: 8px;
+  color: #ccc;
+  font-size: 1em;
+}
+
 .contato {
   max-width: 600px;
   margin: 40px auto 0 auto;
@@ -377,6 +459,7 @@ header p {
     width: 110px;
     height: 110px;
   }
+
 
   .rodape {
     font-size: 0.95em;
