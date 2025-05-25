@@ -114,6 +114,21 @@ header p {
   font-size: 2rem;
 }
 
+.quem-somos {
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  text-align: center;
+  padding: 20px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.quem-somos h2 {
+  color: #00ffc8;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
 /* Equipe lado a lado */
 .team {
   display: flex;
@@ -128,6 +143,19 @@ header p {
   padding: 40px 20px;
   border-radius: 10px;
   gap: 30px;
+}
+
+.titulo-equipe {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.titulo-equipe h2 {
+  color: #00ffc8;
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1px;
 }
 
 .member {
@@ -309,6 +337,15 @@ header p {
     font-size: 1em;
   }
 
+  @media (max-width: 700px) {
+  .quem-somos {
+    max-width: 98vw;
+    margin: 30px auto 0 auto;
+    padding: 10px 4px;
+    text-align: center;
+  }
+}
+
   .team {
     flex-direction: column;
     align-items: center;
@@ -318,26 +355,17 @@ header p {
 
   .member {
     width: 95vw;
-    max-width: 320px;
+    max-width: 350px;
     min-width: 220px;
-    height: 110px; /* Altura fixa para todos os cards */
+    height: 120px; /* Altura fixa para todos os cards */
     margin: 0 auto 18px auto;
-    padding: 0;
+    padding: 14px 4px;
     font-size: 1em;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-  }
-
-  .member h2, .member p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 0;
-    padding: 0;
   }
 
   .perfil {
