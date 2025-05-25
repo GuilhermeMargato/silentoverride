@@ -319,17 +319,26 @@ header p {
 
   .member {
     width: 95vw;
-    max-width: 350px;
+    max-width: 320px;
     min-width: 220px;
-    height: 120px; /* Altura fixa para todos os cards */
+    height: 110px; /* Altura fixa para todos os cards */
     margin: 0 auto 18px auto;
-    padding: 14px 4px;
+    padding: 0;
     font-size: 1em;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+  }
+
+  .member h2, .member p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 0;
   }
 
   .perfil {
