@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a0a0a;
+  color: #00ffc8;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.social-top {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  z-index: 10;
+}
+
+.social-top a {
+  color: #00ffc8;
+  margin-left: 18px;
+  font-size: 2em;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.social-top a:hover {
+  color: #fff;
+}
+
+.contato {
+  max-width: 600px;
+  margin: 40px auto 0 auto;
+  text-align: center;
+  padding: 24px;
+  background: rgba(10,10,10,0.85);
+  border-radius: 10px;
+  color: #00ffc8;
+  box-shadow: 0 2px 8px rgba(0,255,200,0.08);
+}
+
+.contato h2 {
+  color: #00ffc8;
+  margin-bottom: 12px;
+}
+
+.contato-email {
+  color: #00ffc8;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+
+.contato-email:hover {
+  color: #fff;
+}
+
+.rodape {
+  width: 100%;
+  text-align: center;
+  padding: 18px 0 12px 0;
+  color: #00ffc8;
+  font-size: 1em;
+  letter-spacing: 1px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #00ffc8;
+  text-shadow: 0 0 10px #00ffc8;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.sobre {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.sobre h2 {
+  color: #00ffc8;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+/* Equipe lado a lado */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 40px auto;
+  max-width: 1200px;
+  color: #ccc;
+  animation: fadeIn 1.5s ease-in-out;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+  gap: 30px;
+}
+
+.member {
+  background-color: rgb(245, 5, 5);
+  border: 1px solid #1dface;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  margin: 0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.member:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffc8;
+}
+
+.member h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.member a {
+  text-decoration: none;
+  color: #00ffc8;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.member a:hover {
+  color: #fff;
+}
+
+.member p {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.member-link {
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+}
+
+.member-link .member {
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.member-link:hover .member {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffc8;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilo para o perfil do integrante */
+.perfil {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  background: #fff;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 3px solid #0077cc;
+}
+
+.perfil p {
+  color: #00000c; /* Escolha a cor que preferir */
+  font-size: 1.08em;
+}
+
+.redes-sociais {
+  margin-top: 16px;
+}
+
+.redes-sociais a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0077cc;
+  font-size: 1.8em;
+  transition: color 0.2s;
+}
+
+.redes-sociais a:hover {
+  color: #005fa3;
+}
+
+.voltar {
+  display: inline-block;
+  margin-top: 8px;
+  color: #fff;
+  background: #0077cc;
+  border: 2px solid #0077cc;
+  border-radius: 6px;
+  padding: 8px 18px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.voltar:hover {
+  background: #fff;
+  color: #0077cc;
+  border: 2px solid #0077cc;
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 900px) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px;
+  }
+  .member {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .perfil {
+    max-width: 98vw;
+  }
+}
