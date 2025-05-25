@@ -18,11 +18,12 @@ body {
   top: 24px;
   right: 32px;
   z-index: 10;
+  display: flex;
+  gap: 18px;
 }
 
 .social-top a {
   color: #00ffc8;
-  margin-left: 18px;
   font-size: 2em;
   text-decoration: none;
   transition: color 0.2s;
@@ -64,6 +65,7 @@ body {
   width: 100%;
   text-align: center;
   padding: 18px 0 12px 0;
+  background: #0a0a0a;
   color: #00ffc8;
   font-size: 1em;
   letter-spacing: 1px;
@@ -150,6 +152,19 @@ header p {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.member h2 i {
+  font-size: 1.5rem;
+  min-width: 38px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .member a {
@@ -203,7 +218,8 @@ header p {
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
-  background: #fff;
+  background: rgba(10, 10, 10, 0.85);
+  border: 1px solid #00ffc8;
 }
 
 .foto-perfil {
@@ -216,7 +232,7 @@ header p {
 }
 
 .perfil p {
-  color: #00000c; /* Escolha a cor que preferir */
+  color: #00ffc8;
   font-size: 1.08em;
 }
 
@@ -270,5 +286,57 @@ header p {
   }
   .perfil {
     max-width: 98vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .social-top {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin: 18px 0 0 0;
+    right: 0;
+    top: 0;
+    gap: 18px;
+  }
+
+  header {
+    padding: 30px 5px 10px;
+  }
+
+  .sobre, .contato {
+    max-width: 98vw;
+    padding: 10px 4px;
+    font-size: 1em;
+  }
+
+  .team {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 2px;
+    gap: 18px;
+  }
+
+  .member {
+    width: 95vw;
+    min-width: unset;
+    margin: 0 0 18px 0;
+    padding: 14px 4px;
+    font-size: 1em;
+  }
+
+  .perfil {
+    max-width: 98vw;
+    padding: 10px 4px;
+  }
+
+  .foto-perfil {
+    width: 110px;
+    height: 110px;
+  }
+
+  .rodape {
+    font-size: 0.95em;
+    padding: 12px 2px;
   }
 }
