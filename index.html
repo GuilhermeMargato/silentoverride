@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Silent Override</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+  <div class="top-bar">
+    <form class="busca-site" action="https://guilhermemargato.github.io/silentoverride" method="get" target="_blank">
+  <input type="hidden" name="sitesearch" value="https://guilhermemargato.github.io/silentoverride">
+  <input type="text" name="q" placeholder="Buscar no site..." class="input-busca">
+  <button type="submit"><i class="fas fa-search"></i></button>
+</form>
+    <div class="social-top">
+      <a href="https://instagram.com/seu_instagram" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://facebook.com/seu_facebook" target="_blank" title="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+  
+  <header>
+    <h1 id="titulo-site">Silent Override</h1>
+    <audio id="som-hacker" src="https://cdn.pixabay.com/audio/2022/07/26/audio_124bfae1c8.mp3" preload="auto"></audio>
+    <p>A sua proteção é a nossa obrigação.</p>
+  </header>
+
+  <section class="sobre">
+    <h2><i class="fas fa-shield-alt"></i> Sobre o Nosso Serviço</h2>
+    <p>
+      A <strong>Silent Override</strong> oferece serviços especializados em cibersegurança para proteger ativos digitais contra ameaças. Nossos serviços combinam conhecimento técnico avançado, discrição e ética...
+    </p>
+    <a href="paginas/sobre.html" class="ver-mais">Ver mais</a>
+  </section>
+
+  <section class="quem-somos">
+    <h2><i class="fas fa-users"></i> Quem Somos</h2>
+    <p>
+      <strong>Silent Override</strong> é um grupo dedicado à excelência em cibersegurança, formado por profissionais comprometidos com a integridade e a proteção de dados...
+    </p>
+    <a href="paginas/quem-somos.html" class="ver-mais">Ver mais</a>
+  </section>
+
+  <section class="team">
+    <div class="titulo-equipe">
+      <h2>Nossa Equipe!</h2> 
+    </div>
+    <a href="integrantes/guilherme.html" class="member-link">
+      <div class="member">
+        <h2><i class="fas fa-user-secret"></i> Guilherme</h2>
+        <p>Analista de Vulnerabilidades</p>
+      </div>
+    </a>
+    <a href="integrantes/beto.html" class="member-link">
+      <div class="member">
+        <h2><i class="fas fa-shield-virus"></i> Beto</h2>
+        <p>Engenheiro de Defesa Cibernética</p>
+      </div>
+    </a>
+    <a href="integrantes/thaissa.html" class="member-link">
+      <div class="member">
+        <h2><i class="fas fa-bug"></i> Thaissa</h2>
+        <p>Pentester</p>
+      </div>
+    </a>
+    <a href="integrantes/pedro.html" class="member-link">
+      <div class="member">
+        <h2><i class="fas fa-microchip"></i> Pedro</h2>
+        <p>Analista de Riscos</p>
+      </div>
+    </a>
+    <a href="integrantes/luizfelipe.html" class="member-link">
+      <div class="member">
+        <h2><i class="fas fa-brain"></i> Luiz Felipe</h2>
+        <p>Inteligência Cibernética</p>
+      </div>
+    </a>
+  </section>
+
+  <section class="faq">
+    <h2>Perguntas Frequentes</h2>
+    <p>
+      Tire suas dúvidas sobre nossos serviços, suporte, confidencialidade e mais.
+    </p>
+    <a href="paginas/faq.html" class="ver-mais">Ver mais</a>
+  </section>
+
+  <footer class="rodape">
+  © 2025 Silent Override. Todos os direitos reservados.<br>
+  <a href="paginas/politica-privacidade.html" style="color:#00ffc8;">Política de Privacidade</a> |
+  <a href="paginas/termos.html" style="color:#00ffc8;">Termos de Uso</a>
+</footer>
+
+  <script>
+    particlesJS.load('particles-js', 'particles-config.json', function () {
+      console.log('particles.js carregado');
+    });
+
+    // Efeito sonoro no título
+    const titulo = document.getElementById('titulo-site');
+    const som = document.getElementById('som-hacker');
+    if (titulo && som) {
+      titulo.addEventListener('mouseenter', () => {
+        som.currentTime = 0;
+        som.play();
+      });
+      titulo.addEventListener('touchstart', () => {
+        som.currentTime = 0;
+        som.play();
+      });
+    }
+  </script>
+  <script>
+  // ...existing code...
+
+  // Botão voltar ao topo
+  const btnTopo = document.getElementById('btn-topo');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      btnTopo.style.opacity = '1';
+      btnTopo.style.pointerEvents = 'auto';
+    } else {
+      btnTopo.style.opacity = '0';
+      btnTopo.style.pointerEvents = 'none';
+    }
+  });
+  btnTopo.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+<a href="#" id="btn-topo" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></a>
+</body>
+</html>
