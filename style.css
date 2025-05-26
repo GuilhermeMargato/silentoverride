@@ -530,6 +530,8 @@ header p {
   }
 }
 
+/* ...código existente... */
+
 @media (max-width: 700px) {
   .social-top {
     position: static;
@@ -545,8 +547,11 @@ header p {
     flex-direction: column;
     gap: 10px;
     padding: 8px 0;
-    position: static;
+    position: static;      /* Remove sticky em mobile */
     background: rgba(10,10,10,0.95);
+    width: 100vw;
+    align-items: center;
+    z-index: 100;
   }
 
   .menu-site a {
@@ -557,6 +562,9 @@ header p {
     font-size: 1.1em;
     padding: 12px 0;
     border-radius: 8px;
+    background: rgba(10,10,10,0.95);
+    margin-bottom: 6px;
+    display: block;
   }
 
   header {
