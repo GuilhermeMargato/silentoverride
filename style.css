@@ -12,6 +12,19 @@
   gap: 32px;
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #00ffc8;
+  font-size: 2em;
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 1001;
+  cursor: pointer;
+}
+
 .menu-site {
   display: flex;
   gap: 32px;
@@ -543,39 +556,50 @@ header p {
     gap: 18px;
   }
 
-  .menu-site {
-    flex-direction: column;
-    gap: 10px;
-    padding: 8px 0;
-    position: static;      /* Remove sticky em mobile */
-    background: rgba(10,10,10,0.95);
-    width: 100vw;
-    align-items: center;
-    z-index: 100;
-  }
-
-  .menu-site a {
-    width: 90vw;
-    max-width: 320px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.1em;
-    padding: 12px 0;
-    border-radius: 8px;
-    background: rgba(10,10,10,0.95);
-    margin-bottom: 6px;
+  .menu-toggle {
     display: block;
   }
-
+  .menu-site {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    max-width: 320px;
+    height: 100vh;
+    background: rgba(10,10,10,0.98);
+    z-index: 1000;
+    box-shadow: 2px 0 16px rgba(0,255,200,0.08);
+    align-items: flex-start;
+    transition: transform 0.3s;
+    overflow-y: auto;
+  }
+  .menu-site.menu-aberto {
+    display: flex;
+  }
+  .menu-site a {
+    width: 100%;
+    text-align: left;
+    font-size: 1.2em;
+    padding: 18px 24px;
+    border-radius: 0;
+    background: none;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0,255,200,0.08);
+    display: block;
+  }
+}
   header {
     padding: 30px 5px 10px;
   }
 
-  .sobre, .contato, .faq, .quem-somos {
-    max-width: 98vw;
-    padding: 10px 4px;
-    font-size: 1em;
-  }
+ .sobre, .quem-somos, .contato, .faq {
+  word-break: break-word;
+  white-space: normal;
+}
 
   .team {
     flex-direction: column;
@@ -620,4 +644,3 @@ header p {
     height: 40px;
     font-size: 1.5em;
   }
-}
