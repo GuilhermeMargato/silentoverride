@@ -12,48 +12,6 @@
   gap: 32px;
 }
 
-.busca-site {
-  display: flex;
-  align-items: center;
-  gap: 0;
-}
-
-.input-busca {
-  padding: 8px 14px;
-  border-radius: 6px 0 0 6px;
-  border: 1.5px solid #00ffc8;
-  outline: none;
-  width: 220px;
-  font-size: 1em;
-  background: #0a0a0a;
-  color: #00ffc8;
-  transition: box-shadow 0.3s, border-color 0.3s;
-}
-
-.input-busca:focus {
-  border-color: #fff;
-  box-shadow: 0 0 8px #00ffc8;
-  background: #181818;
-  color: #fff;
-}
-
-.busca-site button {
-  padding: 8px 16px;
-  border-radius: 0 6px 6px 0;
-  background: #00ffc8;
-  color: #181818;
-  border: none;
-  font-size: 1.1em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-}
-
-.busca-site button:hover {
-  background: #fff;
-  color: #00ffc8;
-}
-
 .social-top {
   display: flex;
   gap: 18px;
